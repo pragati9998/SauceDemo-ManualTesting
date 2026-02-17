@@ -1,0 +1,24 @@
+Requirement ID,Requirement Description,Module,Test Case ID,Test Case Name,Test Type,Priority,Status
+REQ_SD_001,The system should allow a user with valid credentials to log in successfully,Login,TC_SD_001,Login with valid standard_user credentials,Positive,High,Not Run
+REQ_SD_002,The system should show an error when the wrong password is entered,Login,TC_SD_002,Login with wrong password shows error message,Negative,High,Not Run
+REQ_SD_003,The system should show an error when username and password fields are empty,Login,TC_SD_003,Login with empty username and password shows error,Negative,High,Not Run
+REQ_SD_004,A locked out user should not be able to log in and should see a clear message,Login,TC_SD_004,Locked out user cannot log in,Negative,High,Not Run
+REQ_SD_005,The system should show an error when password field is left empty on login,Login,TC_SD_005,Login with only username filled shows error,Negative,Medium,Not Run
+REQ_SD_006,The user should be able to dismiss the login error message,Login,TC_SD_006,Error message can be dismissed by clicking the X button,Positive,Low,Not Run
+REQ_SD_007,The Products page should display all 6 available products after login,Products Page,TC_SD_007,Products page shows 6 products after login,Positive,High,Not Run
+REQ_SD_008,The user should be able to sort products by price from lowest to highest,Products Page,TC_SD_008,Products can be sorted by Price (low to high),Positive,Medium,Not Run
+REQ_SD_009,The user should be able to sort products by name in reverse alphabetical order,Products Page,TC_SD_009,Products can be sorted by Name (Z to A),Positive,Medium,Not Run
+REQ_SD_010,Clicking a product name should open the product detail page,Products Page,TC_SD_010,Clicking a product name opens the product detail page,Positive,Medium,Not Run
+REQ_SD_011,Adding a product to cart should show a badge count on the cart icon,Cart,TC_SD_011,Adding a product to cart updates the cart badge count,Positive,High,Not Run
+REQ_SD_012,Adding multiple products should show the correct total count on the cart badge,Cart,TC_SD_012,Adding multiple products shows correct count in cart badge,Positive,High,Not Run
+REQ_SD_013,Removing a product from the Products page should decrease the cart badge count,Cart,TC_SD_013,Removing a product from the Products page updates cart badge,Positive,High,Not Run
+REQ_SD_014,The Cart page should show the correct product name description quantity and price,Cart,TC_SD_014,Cart page shows the correct products that were added,Positive,High,Not Run
+REQ_SD_015,The user should be able to remove a product directly from the Cart page,Cart,TC_SD_015,User can remove a product directly from the Cart page,Positive,High,Not Run
+REQ_SD_016,The user should be able to complete Checkout Step 1 with valid name and zip code,Checkout,TC_SD_016,User can complete checkout step 1 with valid information,Positive,High,Not Run
+REQ_SD_017,Checkout Step 1 should show an error if First Name is not filled in,Checkout,TC_SD_017,Checkout step 1 shows error when First Name is missing,Negative,High,Not Run
+REQ_SD_018,Checkout Step 1 should show an error if Zip Code is not filled in,Checkout,TC_SD_018,Checkout step 1 shows error when Zip Code is missing,Negative,High,Not Run
+REQ_SD_019,The Checkout Overview page should display the correct product name and price,Checkout,TC_SD_019,Checkout overview page shows correct item name and price,Positive,High,Not Run
+REQ_SD_020,Clicking Finish should show an order confirmation message,Checkout,TC_SD_020,User sees order confirmation after clicking Finish,Positive,High,Not Run
+REQ_SD_021,The Back Home button on the confirmation page should return the user to the Products page,Checkout,TC_SD_021,Back Home button after order confirmation returns to Products page,Positive,Medium,Not Run
+REQ_SD_022,The user should be able to log out from the hamburger menu,Logout,TC_SD_022,User can log out from the hamburger menu,Positive,High,Not Run
+REQ_SD_023,A logged out user should not be able to access the Products page directly via URL,Logout,TC_SD_023,Accessing inventory page directly after logout is not allowed,Negative,High,Not Run
