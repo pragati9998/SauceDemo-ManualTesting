@@ -105,6 +105,30 @@ Requirements Traceability Matrix. Maps each of the 23 requirements (REQ_SD_001 t
 | Checkout testing | Not covered | Full 3-step checkout tested |
 | Test Data column | No | Yes |
 
+## Automated Bug Verification
+
+The three bugs identified during manual testing have been verified using 
+Playwright automation.
+
+| Bug ID | Description | Result |
+|--------|-------------|--------|
+| BUG_SD_001 | Zip Code accepts letters and special characters | ✅ Confirmed |
+| BUG_SD_002 | Sort order resets after returning from product detail | ✅ Confirmed |
+| BUG_SD_003 | Browser Back shows stale Checkout Overview after order | ✅ Confirmed |
+
+### How to run
+```bash
+cd automation
+npm init -y
+npm install -D @playwright/test
+npx playwright install chromium
+npx playwright test saucedemo_bug_verification.spec.js --headed
+```
+
+### Test results
+
+All 3 bugs were reproduced and confirmed via automated testing.
+See `automation/saucedemo_bug_verification.spec.js` for the full test script.
 ---
 
 ## Key Things I Learned from This Project
